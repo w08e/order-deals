@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://114.116.35.31:3307/order?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: '123456'
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  redis:
+    host: 114.116.35.31
+    port: 6379
+    database: 10
+  rabbitmq:
+    host: 114.116.35.31
+    port: 5673
+    username: guest
+    password: guest
+
+server:
+  port: 8088
+sa-token:
+  token-name: satoken
+  timeout: 2592000
+  active-timeout: -1
+  is-concurrent: true
+  is-share: true
+  token-style: uuid
+  is-log: true
+
+

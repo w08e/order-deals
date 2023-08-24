@@ -1,4 +1,4 @@
-package com.zhouyi.ddd;
+package com.zhouyi.order.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

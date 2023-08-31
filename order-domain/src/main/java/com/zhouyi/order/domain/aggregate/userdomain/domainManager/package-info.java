@@ -4,4 +4,4 @@
  * @author jinyueWang
  * @date 2023/4/9
  */
-package com.zhouyi.order.domain.aggregate.userdomain.domainService;
+package com.zhouyi.order.domain.aggregate.userdomain.domainManager;

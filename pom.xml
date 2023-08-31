@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>order-common</module>
         <module>order-client</module>
         <module>order-application</module>
         <module>order-domain</module>

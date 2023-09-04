@@ -1,6 +1,5 @@
 package com.zhouyi.order.domain.aggregate.orderdoamin;
 
-import com.zhouyi.order.domain.aggregate.orderdoamin.entity.OrderEntity;
 import com.zhouyi.order.domain.aggregate.userdomain.User;
 import com.zhouyi.order.domain.share.enums.OrderStatusEnums;
 import lombok.Data;
@@ -42,14 +41,14 @@ public class Order {
         this.setCreateTime(LocalDateTime.now());
     }
 
-    public OrderEntity toEntity() {
-        OrderEntity entity = new OrderEntity();
-        entity.setId(this.id);
-        entity.setUserId(this.user.getId());
-        entity.setGoodsId(this.getGoodsList()==null?null:this.getGoodsList().get(0).getId());
-        entity.setPaid(this.getPaid());
-        entity.setQuantity(this.getQuantity());
-        entity.setCreateTime(this.getCreateTime());
-        return entity;
-    }
+//    public com.zhouyi.order.domain.aggregate.orderdoamin.entity.OrderEntity toEntity() {
+//        com.zhouyi.order.domain.aggregate.orderdoamin.entity.OrderEntity entity = new com.zhouyi.order.domain.aggregate.orderdoamin.entity.OrderEntity();
+//        entity.setId(this.id);
+//        entity.setUserId(this.user.getId());
+//        entity.setGoodsId(this.getGoodsList()==null?null:this.getGoodsList().get(0).getId());
+//        entity.setPaid(this.getPaid());
+//        entity.setQuantity(this.getQuantity());
+//        entity.setCreateTime(this.getCreateTime());
+//        return entity;
+//    }
 }

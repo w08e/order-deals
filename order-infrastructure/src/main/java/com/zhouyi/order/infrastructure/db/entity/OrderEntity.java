@@ -1,7 +1,5 @@
-package com.zhouyi.order.domain.aggregate.orderdoamin.entity;
+package com.zhouyi.order.infrastructure.db.entity;
 
-
-import com.zhouyi.order.domain.share.enums.OrderStatusEnums;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -34,7 +32,7 @@ public class OrderEntity {
 
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
-    private OrderStatusEnums paid;
+    private String paid;
 
     @Column(name = "quantity")
     private Integer quantity;

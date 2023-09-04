@@ -15,6 +15,7 @@
         <module>order-domain</module>
         <module>order-infrastructure</module>
         <module>order-start</module>
+        <module>order-common</module>
     </modules>
 
     <properties>

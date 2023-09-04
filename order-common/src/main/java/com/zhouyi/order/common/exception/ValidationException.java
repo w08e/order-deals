@@ -23,12 +23,12 @@ public class ValidationException extends ServiceException {
         this.params = params;
     }
 
-    public ValidationException(String code, String message, Object[] params) {
+    public ValidationException(int code, String message, Object[] params) {
         super(code, message);
         this.params = params;
     }
 
-    public static ValidationException of(String code, Object[] params) {
+    public static ValidationException of(int code, Object[] params) {
         return new ValidationException(code, null, params);
     }
 

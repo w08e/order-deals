@@ -1,4 +1,4 @@
-package com.zhouyi.order.common.util;
+package com.zhouyi.order.common.utils;
 
 
 import com.zhouyi.order.common.exception.ValidationException;
@@ -10,13 +10,13 @@ import com.zhouyi.order.common.exception.ValidationException;
  */
 public class ValidationUtil {
 
-    public static void isTrue(boolean expect, String code, Object... params) {
+    public static void isTrue(boolean expect, int code, Object... params) {
         if (!expect) {
             throw ValidationException.of(code, params);
         }
     }
 
-    public static void isFalse(boolean expect, String code, Object... params) {
+    public static void isFalse(boolean expect, int code, Object... params) {
         isTrue(!expect, code, params);
     }
 

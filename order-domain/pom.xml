@@ -16,7 +16,7 @@
 
         <dependency>
             <groupId>com.zhouyi</groupId>
-            <artifactId>order-infrastructure</artifactId>
+            <artifactId>order-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

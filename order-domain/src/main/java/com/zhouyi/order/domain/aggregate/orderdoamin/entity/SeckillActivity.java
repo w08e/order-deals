@@ -1,7 +1,6 @@
 package com.zhouyi.order.domain.aggregate.orderdoamin.entity;
 
 import javax.persistence.*;
-import java.util.Date;
 
 /**
  * @author jinyueWang
@@ -16,18 +15,18 @@ public class SeckillActivity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "goods_id")
-    private Integer goodsId;
+    public SeckillActivity(Integer id) {
+        this.id = id;
+    }
 
-    @Column(name = "start_time")
-    private Date startTime;
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    @Column(name = "end_time")
-    private Date endTime;
+    public Integer getId() {
+        return id;
+    }
 
-    @Column(name = "stock")
-    private Integer stock;
-
-    // 省略getter/setter
-
+    public SeckillActivity() {
+    }
 }

@@ -4,6 +4,9 @@ import com.zhouyi.order.common.jpa.BaseRepository;
 import com.zhouyi.order.domain.aggregate.userdomain.entity.UserEntity;
 import org.springframework.stereotype.Repository;
 
+/**
+ * @author jinyuewang
+ */
 @Repository
 public interface UserRepository extends BaseRepository<UserEntity> {
 
